@@ -5,6 +5,18 @@ app_description = "tasks"
 app_email = "shrutipaneliya.sarvadhi@gmail.com"
 app_license = "mit"
 
+
+doc_events = {
+    "Town Hall Event Registration": {
+        "validate": "shruti_tasks.Tasks29April.Registration_Validation.validate_reg"
+    }
+}
+
+scheduler_events = {
+    "hourly": [
+        "shruti_tasks.Tasks29April.Scheduled _Job.mark_ended_events_as_completed"
+    ]
+}
 # Apps
 # ------------------
 
