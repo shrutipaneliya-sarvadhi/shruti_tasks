@@ -1,0 +1,29 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Total Tickets by Status",
+   "width": "Half"
+  },
+  {
+   "chart": "Open Tickets by Category",
+   "width": "Half"
+  },
+  {
+   "chart": "Daily Tickets Count (Chart)",
+   "width": "Half"
+  }
+ ],
+ "creation": "2025-04-30 16:28:34.203016",
+ "dashboard_name": "Customer Tickets Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2025-04-30 16:36:36.037046",
+ "modified_by": "extra@gmail.com",
+ "module": "shruti_tasks",
+ "name": "Customer Tickets Dashboard",
+ "owner": "extra@gmail.com"
+}
