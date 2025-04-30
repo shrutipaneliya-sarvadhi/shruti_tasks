@@ -8,9 +8,9 @@ body {
   
   /* Header & Footer */
   .site-header, .site-footer {
-    background-color: #2c3e50;
-    color: white;
-    padding: 1rem 2rem;
+    /* background-color: #000000; */
+    color: rgb(0, 0, 0);
+    /* padding: 1rem 2rem; */
     text-align: center;
   }
   
@@ -19,7 +19,7 @@ body {
     max-width: 800px;
     margin: 2rem auto;
     padding: 2rem;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }

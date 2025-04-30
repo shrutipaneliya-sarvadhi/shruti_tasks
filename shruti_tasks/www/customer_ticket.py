@@ -2,6 +2,8 @@ import frappe
 from frappe.utils.user import get_users_with_role
 from datetime import date
 
+
+
 @frappe.whitelist(allow_guest=True)
 def save_ticket():
     today = date.today().strftime("%Y-%m-%d")
@@ -12,6 +14,21 @@ def save_ticket():
         # Log category and roles
         print(f"Category: {category}")
         
+        description = data.get("description", "").lower() if data.get("description") else ""
+
+        # 🧠 Auto-assign category based on description if not provided
+        if not category and description:
+            if any(word in description for word in ["error", "crash"]):
+                category = "Bug"
+            elif any(word in description for word in ["bad", "angry", "not working"]):
+                category = "Complaint"
+            elif any(word in description for word in ["feature", "nice to have"]):
+                category = "Suggestion"
+            else:
+                category = "Other"
+
+        print(f"Final Category: {category}")
+
         assigned_user = None
         if category == "Bug":
             users = get_users_with_role("Maintenance Manager")

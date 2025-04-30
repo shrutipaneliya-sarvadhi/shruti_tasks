@@ -45,13 +45,13 @@ document.getElementById('ticket-form').addEventListener('submit', function (e) {
     }
 
     // Validate Category
-    const categoryInput = document.getElementById('category');
-    const category = categoryInput.value;
+    // const categoryInput = document.getElementById('category');
+    // const category = categoryInput.value;
 
-    if (!category) {
-        showError(categoryInput, 'Please select a category');
-        isValid = false;
-    }
+    // if (!category) {
+    //     showError(categoryInput, 'Please select a category');
+    //     isValid = false;
+    // }
 
     // Validate Description
     const descriptionInput = document.getElementById('description');
@@ -98,8 +98,8 @@ document.getElementById('ticket-form').addEventListener('submit', function (e) {
     })
         .then(response => response.json())
         .then(data => {
-            console.log("333",data)
-            console.log("******",data.message.message)
+            // console.log("333",data)
+            // console.log("******",data.message.message)
 
             alert('Ticket submitted successfully!');
             document.getElementById('ticket-form').reset();

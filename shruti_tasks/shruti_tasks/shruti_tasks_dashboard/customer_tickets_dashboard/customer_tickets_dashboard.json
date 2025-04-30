@@ -3,7 +3,7 @@
  "charts": [
   {
    "chart": "Total Tickets by Status",
-   "width": "Half"
+   "width": "Full"
   },
   {
    "chart": "Open Tickets by Category",
@@ -21,7 +21,7 @@
  "idx": 0,
  "is_default": 0,
  "is_standard": 1,
- "modified": "2025-04-30 16:36:36.037046",
+ "modified": "2025-04-30 16:58:23.656816",
  "modified_by": "extra@gmail.com",
  "module": "shruti_tasks",
  "name": "Customer Tickets Dashboard",

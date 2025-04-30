@@ -6,6 +6,8 @@ from frappe.model.document import Document
 
 
 class CustomerTickets(Document):
+    
+                
     def after_insert(self):
         """Notify assignee and customer if the ticket was created with an assigned user."""
         if self.assigned_to:
