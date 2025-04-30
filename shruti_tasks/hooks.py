@@ -17,9 +17,9 @@ scheduler_events = {
         "shruti_tasks.Tasks29April.Scheduled _Job.mark_ended_events_as_completed"
     ],
     "daily": [
-        "shruti_tasks.Tasks30April.Cronjob.send_new_tickets_email",
-        "shruti_tasks.Tasks30April.Cronjob..send_pending_tickets_email",
-        "shruti_tasks.Tasks30April.Cronjob.auto_close_resolved_tickets"
+        "shruti_tasks.Tasks30April.Cronjob.send_daily_ticket_summary",
+        "shruti_tasks.Tasks30April.Cronjob.send_ticket_reminders_3",
+        "shruti_tasks.Tasks30April.Cronjob.auto_close_old_tickets_7"
     ]
 }
 # Apps
