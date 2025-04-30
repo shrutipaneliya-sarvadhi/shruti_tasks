@@ -51,7 +51,7 @@ def register_for_event():
         }
 
     except Exception as e:
-        frappe.log_error(frappe.get_traceback(), _("Event Registration Error"))
+        # frappe.log_error(frappe.get_traceback(), _("Event Registration Error"))
         frappe.throw(_("Failed to register: {0}").format(str(e)))
 
 
@@ -62,7 +62,6 @@ def send_registration_confirmation_email(registration, event):
     start_time = frappe.utils.format_datetime(event.start_datetime, "medium")
     end_time = frappe.utils.format_datetime(event.end_datetime, "medium")
 
-    # Simple HTML or plain text message
     message = f"""
     <h3>Dear {registration.full_name},</h3>
 
@@ -81,7 +80,7 @@ def send_registration_confirmation_email(registration, event):
 
     frappe.sendmail(
         recipients=[registration.email],
-        sender=None,  # Will use default outgoing email account
+        sender=None,  
         subject=subject,
         message=message,
         header=["Registration Confirmation", "green"]

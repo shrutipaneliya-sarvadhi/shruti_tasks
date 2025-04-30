@@ -18,28 +18,37 @@
   {
    "fieldname": "event_name",
    "fieldtype": "Data",
-   "label": "Event Name"
+   "in_list_view": 1,
+   "label": "Event Name",
+   "reqd": 1
   },
   {
    "fieldname": "start_datetime",
    "fieldtype": "Datetime",
-   "label": "Start DateTime"
+   "in_list_view": 1,
+   "label": "Start DateTime",
+   "reqd": 1
   },
   {
    "fieldname": "end_datetime",
    "fieldtype": "Datetime",
-   "label": "End DateTime"
+   "in_list_view": 1,
+   "label": "End DateTime",
+   "reqd": 1
   },
   {
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Status",
-   "options": "\nDraft\nUpcoming\nCompleted"
+   "options": "\nDraft\nUpcoming\nCompleted",
+   "reqd": 1
   },
   {
    "fieldname": "max_participants",
    "fieldtype": "Int",
-   "label": "Max Participants"
+   "label": "Max Participants",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_whfg",
@@ -54,7 +63,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-29 12:04:36.232388",
+ "modified": "2025-04-29 17:26:42.033654",
  "modified_by": "Administrator",
  "module": "shruti_tasks",
  "name": "Town Hall Event",

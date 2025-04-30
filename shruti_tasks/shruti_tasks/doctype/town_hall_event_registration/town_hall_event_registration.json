@@ -16,18 +16,24 @@
   {
    "fieldname": "town_hall_event",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Town Hall Event",
-   "options": "Town Hall Event"
+   "options": "Town Hall Event",
+   "reqd": 1
   },
   {
    "fieldname": "full_name",
    "fieldtype": "Data",
-   "label": "Full Name"
+   "in_list_view": 1,
+   "label": "Full Name",
+   "reqd": 1
   },
   {
    "fieldname": "email",
    "fieldtype": "Data",
-   "label": "Email"
+   "in_list_view": 1,
+   "label": "Email",
+   "reqd": 1
   },
   {
    "fieldname": "phone",
@@ -44,7 +50,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-29 12:05:51.750974",
+ "modified": "2025-04-29 17:25:54.502652",
  "modified_by": "Administrator",
  "module": "shruti_tasks",
  "name": "Town Hall Event Registration",

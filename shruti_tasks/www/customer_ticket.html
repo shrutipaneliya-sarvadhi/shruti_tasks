@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customer Ticket</title>
+  <link rel="stylesheet" href="customer_ticket.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Customer Ticket Management</h1>
+  </header>
+
+  <main class="ticket-container">
+    <form id="ticket-form" class="ticket-form">
+    <input type="hidden" name="csrf_token" value="{{ frappe.session.csrf_token }}">
+      <div class="form-group">
+        <label for="customer-name">Customer Name <span class="required">*</span></label>
+        <input type="text" id="customer-name" name="customerName" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email <span class="required">*</span></label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone (Optional)</label>
+        <input type="tel" id="phone" name="phone" />
+      </div>
+
+      <div class="form-group">
+        <label for="category">Category <span class="required">*</span></label>
+        <select id="category" name="category" required>
+          <option value="">-- Select --</option>
+          <option value="Bug">Bug</option>
+          <option value="Complaint">Complaint</option>
+          <option value="Suggestion">Suggestion</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description <span class="required">*</span></label>
+        <textarea id="description" name="description" rows="5" required></textarea>
+      </div>
+
+      <!-- <div class="form-group">
+        <label for="status">Status <span class="required">*</span></label>
+        <select id="status" name="status" required>
+          <option value="">-- Select --</option>
+          <option value="Open">Open</option>
+          <option value="In Progress">In Progress</option>
+          <option value="Resolved">Resolved</option>
+          <option value="Closed">Closed</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="assigned-to">Assigned To <span class="required">*</span></label>
+        <a href="#" id="assigned-to">Select User</a>
+      </div> -->
+
+      <div class="form-group">
+        <label for="resolution-notes">Resolution Notes</label>
+        <textarea id="resolution-notes" name="resolutionNotes" rows="4"></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">Submit Ticket</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Customer Support Inc.</p>
+  </footer>
+
+  <script src="customer_ticket.js"></script>
+</body>
+</html>

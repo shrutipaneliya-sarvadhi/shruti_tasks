@@ -17,12 +17,10 @@ frappe.ui.form.on("Town Hall Event", {
                     const event_name = frm.doc.name;
                     const filters = [["town_hall_event", "=", event_name]];
 
-                    // Navigate to the list view of registrations with filter
                     frappe.set_route("List", "Town Hall Event Registration", {
                         town_hall_event: event_name
                     });
                 },
-                __("Actions") // Optional group label
             );
         }
     }
