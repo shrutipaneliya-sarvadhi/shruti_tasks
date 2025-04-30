@@ -15,6 +15,11 @@ doc_events = {
 scheduler_events = {
     "hourly": [
         "shruti_tasks.Tasks29April.Scheduled _Job.mark_ended_events_as_completed"
+    ],
+    "daily": [
+        "shruti_tasks.Tasks30April.Cronjob.send_new_tickets_email",
+        "shruti_tasks.Tasks30April.Cronjob..send_pending_tickets_email",
+        "shruti_tasks.Tasks30April.Cronjob.auto_close_resolved_tickets"
     ]
 }
 # Apps
